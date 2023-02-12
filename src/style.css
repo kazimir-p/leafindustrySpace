@@ -1,0 +1,161 @@
+/* body */
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: monospace;
+    background-image: radial-gradient(circle, #800000, #FF4500, rgb(235, 148, 71));
+}
+a {
+text-decoration: none;
+color: bisque;
+}
+
+.container {
+    width: 69%;
+    margin: auto;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: url("../src/img/lisceprekrivatepih1_manja.JPG"); 
+}
+
+/* nav-element */
+#nav {
+    display: flex;
+}
+
+#title {
+    font-size: 40px;
+    height: 60px;
+    margin-left: 50px;
+    color: seashell;
+    flex: 70%;
+    padding-top: 20px;
+}
+
+#nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 30%;
+    margin-right: 5px;
+}
+
+.navDiv {
+    margin-left: 0;
+    font-size: 20px;
+    color: bisque;  
+    display: inline;
+    background-color: rgba(85, 107, 47, 0.587);
+    margin-right: 30px;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+.navDiv:hover {
+    background: rgba(248, 248, 255, 0.451);
+    transition: all 0.4s ease-out;  
+     color: darkolivegreen;
+}
+.navDiv:hover a{
+    color: darkolivegreen;
+}
+/* hero-section */
+
+#hero {
+    color: seashell;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* doesn't ceter evenly*/
+    height: 90%;
+    margin: 0 15px 20vh;
+}
+
+.hero-text {
+    background-color: rgba(105, 105, 105, 0.568);
+    font-size: 25px;
+    padding: 5%;
+    max-width: 600px;
+    border: 2px solid bisque;
+    border-radius: 5px;
+}
+
+/* footer */
+
+#me {
+    background-color: bisque;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content:center;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+}
+
+.me-text {
+    color: darkolivegreen;
+    font-size: 40px;
+}
+
+#up {
+    margin:10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#up a i {
+    color:darkolivegreen;
+    font-size: 20px;
+
+}
+
+ 
+@media only screen and (max-width:1200px) {
+#nav {
+    flex-direction: column;
+    align-items: baseline;
+}
+   
+#title, #nav-list{
+    flex: 100%;
+    align-items: center;
+    margin-top: 12px;
+}
+#hero {
+    margin: 0 15px;
+    padding-bottom: 80px;
+}
+
+}
+
+@media only screen and (max-width:1060px) {
+.container {
+    width: 100%;
+}
+
+}
+@media only screen and (max-width:800px){
+    .me-text {
+        font-size: 5vw;
+    }
+}
+@media only screen and (max-width:500px) {
+#title {
+    font-size: 8vw;
+    margin-left: 20px;
+}
+.hero-text {
+    font-size: 5vw;
+}
+.navDiv {
+    font-size: 15px;
+}
+}
