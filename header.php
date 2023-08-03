@@ -36,13 +36,13 @@
                         </ul> -->
                     </div>
                     <!-- hamburger-->
-<div class="mmenu-menu">
-<?php wp_nav_menu( array( 'theme_location' =>
-'header-menu' ) ); ?>
-</div>
-<div id="mmenu" class="mmenu-icon-wrapper">
-<span class="mmenu-icon"></span>
-</div>
-<!-- konec hamburgeru-->
+                    <div class="mmenu-menu">
+                    <?php wp_nav_menu( array( 'theme_location' =>
+                    'header-menu' ) ); ?>
+                    </div>
+                    <div id="mmenu" class="mmenu-icon-wrapper">
+                    <span class="mmenu-icon"></span>
+                    </div>
+                    <!-- konec hamburgeru-->
                 </nav>
         </header>
